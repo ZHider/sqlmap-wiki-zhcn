@@ -1,0 +1,675 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>访问 Windows 注册表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="General.html" />
+    
+    
+    <link rel="prev" href="Operating-system-takeover.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Users-manual.html">
+            
+                <a href="../Users-manual.html">
+            
+                    
+                    用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Techniques.html">
+            
+                <a href="../Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Features.html">
+            
+                <a href="../Features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Download-and-update.html">
+            
+                <a href="../Download-and-update.html">
+            
+                    
+                    下载更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Dependencies.html">
+            
+                <a href="../Dependencies.html">
+            
+                    
+                    相关依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../History.html">
+            
+                <a href="../History.html">
+            
+                    
+                    历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="Usage.html">
+            
+                <a href="Usage.html">
+            
+                    
+                    用法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="Output-verbosity.html">
+            
+                <a href="Output-verbosity.html">
+            
+                    
+                    输出详细等级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="Target.html">
+            
+                <a href="Target.html">
+            
+                    
+                    目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="Request.html">
+            
+                <a href="Request.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="Optimization.html">
+            
+                <a href="Optimization.html">
+            
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="Injection.html">
+            
+                <a href="Injection.html">
+            
+                    
+                    注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.6" data-path="Detection.html">
+            
+                <a href="Detection.html">
+            
+                    
+                    检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.7" data-path="Techniques.html">
+            
+                <a href="Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.8" data-path="Fingerprint.html">
+            
+                <a href="Fingerprint.html">
+            
+                    
+                    指纹识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.9" data-path="Enumeration.html">
+            
+                <a href="Enumeration.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.10" data-path="Brute-force.html">
+            
+                <a href="Brute-force.html">
+            
+                    
+                    暴力破解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.11" data-path="User-defined-function-injection.html">
+            
+                <a href="User-defined-function-injection.html">
+            
+                    
+                    用户自定义函数注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.12" data-path="File-system-access.html">
+            
+                <a href="File-system-access.html">
+            
+                    
+                    访问文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.13" data-path="Operating-system-takeover.html">
+            
+                <a href="Operating-system-takeover.html">
+            
+                    
+                    接管操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8.14" data-path="Windows-registry-access.html">
+            
+                <a href="Windows-registry-access.html">
+            
+                    
+                    访问 Windows 注册表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.15" data-path="General.html">
+            
+                <a href="General.html">
+            
+                    
+                    常规选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.16" data-path="Miscellaneous.html">
+            
+                <a href="Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.17" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    API（REST-JSON）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../License.html">
+            
+                <a href="../License.html">
+            
+                    
+                    许可证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Miscellaneous/Miscellaneous.html">
+            
+                <a href="../../Miscellaneous/Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Miscellaneous/FAQ.html">
+            
+                <a href="../../Miscellaneous/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../Miscellaneous/Presentations.html">
+            
+                <a href="../../Miscellaneous/Presentations.html">
+            
+                    
+                    展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../Miscellaneous/Screenshots.html">
+            
+                <a href="../../Miscellaneous/Screenshots.html">
+            
+                    
+                    截图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../Miscellaneous/Third-party-libraries.html">
+            
+                <a href="../../Miscellaneous/Third-party-libraries.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >访问 Windows 注册表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BBF;&#x95EE;-windows-&#x6CE8;&#x518C;&#x8868;">&#x8BBF;&#x95EE; Windows &#x6CE8;&#x518C;&#x8868;</h1>
+<blockquote>
+<p><em>&#x8BD1;&#x81EA;&#xFF1A;<a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage#windows-registry-access" target="_blank">Windows registry access</a></em></p>
+</blockquote>
+<p>&#x5F53;&#x540E;&#x7AEF; DBMS&#xFF08;Database Management System&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF09;&#x662F; MySQL&#xFF0C;PostgreSQL &#x6216; Microsoft SQL Server &#x5E76;&#x4E14; Web &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x652F;&#x6301;&#x5806;&#x53E0;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;sqlmap &#x53EF;&#x4EE5;&#x8BBF;&#x95EE; Windows &#x6CE8;&#x518C;&#x8868;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x4F1A;&#x8BDD;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x5177;&#x5907;&#x76F8;&#x5E94;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</p>
+<h2 id="&#x8BFB;&#x53D6;-windows-&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;">&#x8BFB;&#x53D6; Windows &#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;</h2>
+<p>&#x5F00;&#x5173;&#xFF1A;<code>--reg-read</code></p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5F00;&#x5173;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;&#x3002;</p>
+<h2 id="&#x5199;&#x5165;-windows-&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;">&#x5199;&#x5165; Windows &#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;</h2>
+<p>&#x5F00;&#x5173;&#xFF1A;<code>--reg-add</code></p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5F00;&#x5173;&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;&#x3002;</p>
+<h2 id="&#x5220;&#x9664;-windows-&#x6CE8;&#x518C;&#x8868;&#x9879;">&#x5220;&#x9664; Windows &#x6CE8;&#x518C;&#x8868;&#x9879;</h2>
+<p>&#x5F00;&#x5173;&#xFF1A;<code>--reg-del</code></p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x5F00;&#x5173;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x6CE8;&#x518C;&#x8868;&#x9879;&#x3002;</p>
+<h2 id="&#x6CE8;&#x518C;&#x8868;&#x8F85;&#x52A9;&#x9009;&#x9879;">&#x6CE8;&#x518C;&#x8868;&#x8F85;&#x52A9;&#x9009;&#x9879;</h2>
+<p>&#x9009;&#x9879;&#xFF1A;<code>--reg-key</code>&#xFF0C;<code>--reg-value</code>&#xFF0C;<code>--reg-data</code> &#x548C; <code>--reg-type</code></p>
+<p>&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x6B63;&#x786E;&#x8FD0;&#x884C; <code>--reg-read</code>&#xFF0C;<code>--reg-add</code> &#x548C; <code>--reg-del</code> &#x7B49;&#x5F00;&#x5173;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x63D0;&#x793A;&#x7B26;&#x4E0B;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x53C2;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x63D0;&#x4F9B;&#x6CE8;&#x518C;&#x8868;&#x9879;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F7F;&#x7528; <code>--reg-key</code> &#x9009;&#x9879;&#x6307;&#x5B9A; Windows &#x6CE8;&#x518C;&#x8868;&#x9879;&#x8DEF;&#x5F84;&#xFF0C;<code>--reg-value</code> &#x63D0;&#x4F9B;&#x6CE8;&#x518C;&#x8868;&#x9879;&#x7684;&#x540D;&#x79F0;&#xFF0C;<code>--reg-data</code> &#x63D0;&#x4F9B;&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;&#x6570;&#x636E;&#xFF0C;&#x800C; <code>--reg-type</code> &#x9009;&#x9879;&#x6307;&#x5B9A;&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x6DFB;&#x52A0;&#x6CE8;&#x518C;&#x8868;&#x9879;&#x914D;&#x7F6E;&#x5355;&#x5143;&#x7684;&#x793A;&#x4F8B;&#x547D;&#x4EE4;&#x884C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-shell">$ python sqlmap.py -u http://192.168.136.129/sqlmap/pgsql/get_int.aspx?id=1 --r\
+eg-add --reg-key=&quot;HKEY_LOCAL_MACHINE\SOFTWARE\sqlmap&quot; --reg-value=Test --reg-ty\
+pe=REG_SZ --reg-data=1
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Operating-system-takeover.html" class="navigation navigation-prev " aria-label="Previous page: 接管操作系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="General.html" class="navigation navigation-next " aria-label="Next page: 常规选项">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"访问 Windows 注册表","level":"2.8.14","depth":2,"next":{"title":"常规选项","level":"2.8.15","depth":2,"path":"Users-manual/Usage/General.md","ref":"Users-manual/Usage/General.md","articles":[]},"previous":{"title":"接管操作系统","level":"2.8.13","depth":2,"path":"Users-manual/Usage/Operating-system-takeover.md","ref":"Users-manual/Usage/Operating-system-takeover.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"path":{"toc":"SUMMARY.md"},"theme":"default","name":"sqlmap-wiki-zhcn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"introduction":"最新的 sqlmap wiki 中文版。","gitbook":"*"},"file":{"path":"Users-manual/Usage/Windows-registry-access.md","mtime":"2023-11-12T07:55:51.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-12T07:56:17.655Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

